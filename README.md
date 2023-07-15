@@ -1,4 +1,4 @@
-# intelunnati_Trailblazers
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/b74ed80a-cec8-44cb-bad2-93c47b0e2c72)# intelunnati_Trailblazers
 
 # Introduction
 The lives of individuals have been impacted by significant technological flaws in recent years as a result of information sharing.
@@ -140,7 +140,54 @@ The best performance was obtained by training our LSTM model with the layers spe
 ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/3e2780e9-0db0-4b2a-b2ae-6d718fb2ce96)
 
 
+* ROC Curve
 
+
+ ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/5ae44689-6380-414d-b0ce-2b584d732adb)
+
+
+ # The results of training and the confusion matrix has been shown below:
+ ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/25f9026c-0e18-4121-8dec-afa27eef93b6)
+
+
+ 
+ * CONFUSION MATRIX
+ 
+ 
+ ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/439f6273-1a1f-4b5d-83b6-438aa9d5cb0a)
+
+
+   * Even though we had a very good accuracy on our deep learning models the only problem was that of generalization and to solve it we needed too much data in order to make 
+     our machine learn human semantics of Natural Language and thus we came to the point of choosing transformer-based models and hence experimented on BERT, RoBERTa and 
+     DistilBERT. And were successful only in verifying results from our model built upon the BERT Architecture due to the assigned timeframe. Still other results have also 
+     been displayed below:
+
+# BERT
+Our training accuracy was about 90% and the confusion matrix is represented here. Even though our accuracy was not as good as our deep learning model, it outperformed all our previous models in classifying real-world news titles as fake or true.
+ 
+ * We just used the complete pre-trained model in this case and didn’t use any of the word embeddings except tokenizing the sentences using BertTokenizer.
+   
+   * CONFUSION MATRIX
+
+     ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/51daf2b0-c7e7-4e38-b1fa-27a5e1c1685e)
+
+
+# BERT with TF-IDF Vectorizer:
+
+ Now moving forward we apply one of the mostly used embedding techniques i.e Tf-idf Vectorizer and thus our results are highly improved still without having any additional 
+ layers on top of the BERT Architecture.
+
+  * Even while training on a single epoch(due to time constraints) we were able to get a very high accuracy of 93.59% and could have easily increased if allowed to be 
+    trained on 5-10 epochs.
+
+
+
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/f8d78af5-74ad-4a84-8836-975049c28563)  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/03dd0558-4649-4a6d-9199-c1ae839c94ff)
+
+
+ 
+
+ 
 
 
 # Future Aspects
