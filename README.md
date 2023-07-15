@@ -26,6 +26,15 @@ feature and that is AI-generated fake news as nowadays many sources do use AI-ge
 
 We had been given the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
 
+# **Work Flow**
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c0900d97-6b4d-471b-a46b-053ccd081159)
+
+1. First of all we bild a simple ML model using `Random Forest` and we got an unreasonably High Accuracies.
+2. Then we tried to add `Fake AI parameter` which comes under unsupervised learning and here we got a accuracy but not a good performance on real world news.
+3. After this we tried `Deep Learning(LSTM)` under which a variety of EDA is done but still some issue was there while checking on real world news sets.
+4. So we tried to switch to a `Pre-Trained **BERT** model` which showed a very good semantic understanding with good performance on real world news sets.
+5. Now we tried `BERT optimized(Attention)` and we were trying to implement newer layers for better performance.
+
 ## Exploratory Data Analysis
 The most important step in the ML development cycle is the data preprocessing or the EDA part as it prepares our dataset in such a way that the machine could take in the most important features for classification. We had begun building by using the most Basic ML algorithms such as Logistic Regression, Support Vector Classifiers, XGBoost, Passive Aggressive Classifiers, and Random Forests. We applied preprocessing techniques like Regex and lowering cases to remove unnecessary symbols and link present our data.
 
