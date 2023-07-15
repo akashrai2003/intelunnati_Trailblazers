@@ -42,3 +42,6 @@ There were multiple techniques we applied here for creating word Embeddings like
 * Word2Vec: Word2vec is not a single algorithm but a combination of two techniques – CBOW(Continuous bag of words) and Skip-gram model.
 * One Hot Representation & Tokenizers: Used in NLP to encode categorical factors as binary vectors, such as words or part-of-speech identifiers.
 
+***The best results were obtained by using GloVe embeddings which were about `98.11%` on the test set and validation accuracy of about `98.06%` using nearly the same model for 
+  all  the different techniques.***
+  
