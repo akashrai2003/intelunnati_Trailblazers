@@ -27,6 +27,28 @@ feature and that is AI-generated fake news as nowadays many sources do use AI-ge
 
 We had been given the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
 
+# In-Depth Exploratory Data Analysis
+
+* About Dataset
+  Our dataset consists of only a few domains of news and thus is not guaranteed of giving the best performance for news from different domains. And the distribution of news 
+  across different domains is as follows:
+  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/cd8b6989-a228-4020-b313-0b4dbdf3bfef) ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/fb1d2a2c-8349-482c-a0a3-601e820e1a62)
+
+ * As we can see here that only Fake news has 6 different domains while True file has news divided only into 2 domains.
+  The WordCloud is shown below and it describes the most repeated words in both files:
+
+
+   ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/7e7bd945-e09b-41ff-9cb6-4d57a1aff9ff)
+
+  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/eadb78b1-e158-4177-8280-e1e337331eff)
+
+
+
+
+
+
+
+
 # **Work Flow**
 ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c0900d97-6b4d-471b-a46b-053ccd081159)
 
