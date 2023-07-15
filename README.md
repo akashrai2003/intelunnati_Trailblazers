@@ -23,5 +23,6 @@ feature and that is AI-generated fake news as nowadays many sources do use AI-ge
 
 # Dataset
 ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c030c6fe-9645-4c7d-84af-fed91aa4692b)
+
 We had been given the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
 
