@@ -48,6 +48,21 @@ We had been given the ISOT Dataset as our base dataset and no restrictions were 
      ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/eadb78b1-e158-4177-8280-e1e337331eff)
 
 
+    * Split Of Data between Real and Fake News Files
+
+      ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/b2ab2b50-260c-49a8-8909-2adbe10643a1)
+
+
+ **Our Machine Learning model is consisting of the classification of fake news between human-authored fake news, real news and AI-generated fake news. Further we’ve done two 
+ way classification between them and the results are displayed as follows**
+
+ ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/85e12a57-3d92-4614-a287-465d75b9e9be)
+
+ **These represent the ROC-AUC curve and the Precision-Recall curves respectively and as we can see even though our Accuracy was quite good the results didn’t converge up to 
+   the mark.**
+
+
+
 
 
 
@@ -103,6 +118,30 @@ For our ML-based work, we evaluate our models on the accuracy score and also oth
 The model evaluation is done using our metrics such as accuracy and loss. We received the best accuracy by using Glove representations as `97.86%` on **training data** and `97.81%` on **testing data**. Also the ROC-AUC scores were 
 By using **SOTA models** such as `BERT` got the best accuracy to be `89%` on BERT but it worked too well while using current news sources as compared to our DL models. Using Tf-idf embeddings with the BERT Architecture got us better accuracy of `93.59%` only on 1 epoch, thus have a very high chance of going even higher if trained on 5-10 epochs.
 We also tried training on other transformer-based models such as `DistilBERT` & `RoBERTa` but were not able to wrap it up completely.
+
+# Deep Learning Models
+The best performance was obtained by training our LSTM model with the layers specified below and using Glove Embeddings and the evaluation metric have been plotted:
+
+
+
+
+
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/314fd1ec-cf2a-4c28-afdb-bd775fb5c944)
+
+
+* Accuracy v/s Epochs
+
+
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/9d4d28fc-bc19-43dc-9c61-f66aa5a902fc)
+
+
+* Loss v/s Epochs
+
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/3e2780e9-0db0-4b2a-b2ae-6d718fb2ce96)
+
+
+
+
 
 # Future Aspects
 Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
