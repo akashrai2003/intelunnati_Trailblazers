@@ -60,6 +60,14 @@ The transformer model BERT uses sub-word tokenization, here the BERT tokenizer s
 
 # Metric & Model Selection
 After rigorous use of Machine Learning and Deep Learning models, the model we selected was a transformer model ‘bert-base-uncased’ having 12 encoders with 12 bidirectional self-attention heads totaling `110 million parameters`. By sacrificing a bit of accuracy, we saved a lot of computation time here as the ‘bert-large-uncased’ is a heavy model pre-trained on the Toronto BookCorpus `(800M words)` and English Wikipedia(2,500M words) with 24 encoders with 16 bidirectional self-attention heads totaling `340 million parameters`. BERT was trained previously trained on Wikipedia’s dataset and thus has a very comprehensive understanding of Human Language Semantics and thus is used extensively in the NLP domain, thus we gave it priority over other trained models. Another option could be the `RoBERTa model` which has the same base architecture as `BERT` but has different tokenization and other techniques explained forward.
+  * Metrics used here was the Confusion Matrix for BERT’s initial training as it is considered one of the best to be used in binary classification tasks. It takes into 
+    consideration all four values in the confusion matrix and can be defined by the following &#8594;
+      ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/a9f1a8cc-b44c-4143-9a02-f926f6466ca6)
+
+      Other metrics that were chosen are the ROC-AUC curve and Confusion Matrix elements for evaluating our ML models and for Deep Learning models.
+      All the encoding methods used in our project were introduced briefly inside the EDA section and a more in-depth version of the file could be seen on the following link:
+
+
 
 # Model Evaluation
 For our ML-based work, we evaluate our models on the accuracy score and also other measures included in the Confusion Matrix. The average accuracy we’d gained on binary classification was found to be `92.17%` and `AUC score of 0.8`
