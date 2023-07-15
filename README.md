@@ -32,7 +32,7 @@ We had been given the ISOT Dataset as our base dataset and no restrictions were 
 1. First of all we bild a simple ML model using `Random Forest` and we got an unreasonably High Accuracies.
 2. Then we tried to add `Fake AI parameter` which comes under unsupervised learning and here we got a accuracy but not a good performance on real world news.
 3. After this we tried `Deep Learning(LSTM)` under which a variety of EDA is done but still some issue was there while checking on real world news sets.
-4. So we tried to switch to a `Pre-Trained **BERT** model` which showed a very good semantic understanding with good performance on real world news sets.
+4. So we tried to switch to a `Pre-Trained BERT model` which showed a very good semantic understanding with good performance on real world news sets.
 5. Now we tried `BERT optimized(Attention)` and we were trying to implement newer layers for better performance.
 
 ## Exploratory Data Analysis
