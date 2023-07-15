@@ -44,4 +44,11 @@ There were multiple techniques we applied here for creating word Embeddings like
 
 ***The best results were obtained by using GloVe embeddings which were about `98.11%` on the test set and validation accuracy of about `98.06%` using nearly the same model for 
   all  the different techniques.***
-  
+
+# EDA on Pre-Trained Model BERT (SOTA)
+Even though the accuracy did seem very good but there was not enough semantics according to us for the model to learn the way of human interpretations, so we decided to move for one of the state of the art models in Natural Language which is BERT that is trained on Wikipedia’s dataset but didn’t use the large model having 340M  parameters due to the increase in computation times.
+The transformer model BERT uses sub-word tokenization, here the BERT tokenizer splits the string into multiple substrings and the tokenization we’d done was using BertTokenizerFast for tokenizing the texts of the words on the ‘Title’ of the dataset rather than the ‘Text’ of the dataset. BertTokenizerFast is a tokenizer class that inherits from PreTrainedTokenizerFast which contains most of the main methods.
+
+# Metric & Model Selection
+After rigorous use of Machine Learning and Deep Learning models, the model we selected was a transformer model ‘bert-base-uncased’ having 12 encoders with 12 bidirectional self-attention heads totaling `110 million parameters`. By sacrificing a bit of accuracy, we saved a lot of computation time here as the ‘bert-large-uncased’ is a heavy model pre-trained on the Toronto BookCorpus `(800M words)` and English Wikipedia(2,500M words) with 24 encoders with 16 bidirectional self-attention heads totaling `340 million parameters`. BERT was trained previously trained on Wikipedia’s dataset and thus has a very comprehensive understanding of Human Language Semantics and thus is used extensively in the NLP domain, thus we gave it priority over other trained models. Another option could be the `RoBERTa model` which has the same base architecture as `BERT` but has different tokenization and other techniques explained forward.
+
