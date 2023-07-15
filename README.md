@@ -34,3 +34,11 @@ The most important step in the ML development cycle is the data preprocessing or
     were very distinguishable between the different classes (avg. words per sentence, article lengths, news content). We normalized these features and were able to 
     successfully remove those factors.
 
+Even after getting reasonably good accuracies, the model was not able to predict the real-world recent scenarios as fake or true, so we figured out that either our model was not strong enough to learn semantics or we were required to train or more data, thus we decide to move onto Deep Learning models as the Neural Networks lay a very strong learning foundation which learns a lot of features and is proven more powerful than basic ML models. The link for the complete EDA is below.
+
+## EDA Deep Learning
+There were multiple techniques we applied here for creating word Embeddings like &#8594;
+* GloVe (Global Vectors for Word Representation):  Based on matrix factorization techniques on the word-context matrix.
+* Word2Vec: Word2vec is not a single algorithm but a combination of two techniques – CBOW(Continuous bag of words) and Skip-gram model.
+* One Hot Representation & Tokenizers: Used in NLP to encode categorical factors as binary vectors, such as words or part-of-speech identifiers.
+
