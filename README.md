@@ -10,7 +10,7 @@ whihch has also resulted in the loss of human lives. In order to detect wether n
 our organiztion aims to help ensure peace and sanity.
 
 # Team Members
-All of us are E.C.E undergrads at 'NMIT'
+All of us are E.C.E undergrads at `NMIT`
 - Akash Rai
 - Harsh Ranjan
 - Ankur
