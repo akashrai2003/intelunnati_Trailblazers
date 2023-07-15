@@ -146,10 +146,6 @@ The best performance was obtained by training our LSTM model with the layers spe
  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/5ae44689-6380-414d-b0ce-2b584d732adb)
 
 
- # The results of training and the confusion matrix has been shown below:
- ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/25f9026c-0e18-4121-8dec-afa27eef93b6)
-
-
  
  * CONFUSION MATRIX
  
@@ -174,15 +170,14 @@ Our training accuracy was about 90% and the confusion matrix is represented here
 
 # BERT with TF-IDF Vectorizer:
 
- Now moving forward we apply one of the mostly used embedding techniques i.e Tf-idf Vectorizer and thus our results are highly improved still without having any additional 
- layers on top of the BERT Architecture.
+ Now moving forward we apply one of the mostly used embedding techniques i.e Tf-idf Vectorizer and thus our results are highly improved still without having any additional layers on top of the BERT Architecture. This model couldn't be tested thoroughly on custom news data due to the matter of submissions closing in but it can surely outperform our previous BERT model due to the addition of word embeddings.
 
   * Even while training on a single epoch(due to time constraints) we were able to get a very high accuracy of 93.59% and could have easily increased if allowed to be 
     trained on 5-10 epochs.
 
 
 
-![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/f8d78af5-74ad-4a84-8836-975049c28563)  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/03dd0558-4649-4a6d-9199-c1ae839c94ff)
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/f8d78af5-74ad-4a84-8836-975049c28563)  
 
 
  
@@ -191,8 +186,9 @@ Our training accuracy was about 90% and the confusion matrix is represented here
 
 
 # Future Aspects
+This repository will keep on being updated from our side with the help of possible more solutions which couldn't be created due to the timeframe which will include experimenting with other models such as DistilBERT & RoBERTa etc.
 Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
-* Attention modelling requires features to be present which can be given more importance too, for example we can affirm by training which author has more chances of producing a real article
+* Attention modelling requires features to be present which can be given more importance too for example, we can affirm by training which author has more chances of producing a real article
 * Clickbait can also be a classification criterion with the inclusion of True and Fake
 * Using a more complex network of layers we would be able to increase our generalization of our model and can highly expect a very good accuracy 
 
