@@ -52,3 +52,11 @@ The transformer model BERT uses sub-word tokenization, here the BERT tokenizer s
 # Metric & Model Selection
 After rigorous use of Machine Learning and Deep Learning models, the model we selected was a transformer model ‘bert-base-uncased’ having 12 encoders with 12 bidirectional self-attention heads totaling `110 million parameters`. By sacrificing a bit of accuracy, we saved a lot of computation time here as the ‘bert-large-uncased’ is a heavy model pre-trained on the Toronto BookCorpus `(800M words)` and English Wikipedia(2,500M words) with 24 encoders with 16 bidirectional self-attention heads totaling `340 million parameters`. BERT was trained previously trained on Wikipedia’s dataset and thus has a very comprehensive understanding of Human Language Semantics and thus is used extensively in the NLP domain, thus we gave it priority over other trained models. Another option could be the `RoBERTa model` which has the same base architecture as `BERT` but has different tokenization and other techniques explained forward.
 
+# Model Evaluation
+For our ML-based work, we evaluate our models on the accuracy score and also other measures included in the Confusion Matrix. The average accuracy we’d gained on binary classification was found to be `92.17%` and `AUC score of 0.8`
+The model evaluation is done using our metrics such as accuracy and loss. We received the best accuracy by using Glove representations as `97.86%` on **training data** and `97.81%` on **testing data**. Also the ROC-AUC scores were 
+By using **SOTA models** such as `BERT` got the best accuracy to be `89%` on BERT but it worked too well while using current news sources as compared to our DL models. Using Tf-idf embeddings with the BERT Architecture got us better accuracy of `93.59%` only on 1 epoch, thus have a very high chance of going even higher if trained on 5-10 epochs.
+We also tried training on other transformer-based models such as DistilBERT & RoBERTa but were not able to wrap it up completely.
+
+
+
