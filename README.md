@@ -6,7 +6,7 @@ Applying the machine learning techniques we learned in class will help our group
 that makes it posssible for us to do so.
 The spread of false information has caused instablity in both past and the present,
 whihch has also resulted in the loss of human lives. In order to detect wether news is legitimate and bogus using machine learning concepts,
-our organiztion aims to help ensure peace and sanity.
+our organiztion aims to help ensure social peace and sanity.
 
 # Team Members
 All of us are E.C.E undergrads at `NMIT`
@@ -186,11 +186,12 @@ Our training accuracy was about 90% and the confusion matrix is represented here
 
 
 # Future Aspects
-This repository will keep on being updated from our side with the help of possible more solutions which couldn't be created due to the timeframe which will include experimenting with other models such as DistilBERT & RoBERTa etc.
-Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
-* Attention modelling requires features to be present which can be given more importance too for example, we can affirm by training which author has more chances of producing a real article
-* Clickbait can also be a classification criterion with the inclusion of True and Fake
-* Using a more complex network of layers we would be able to increase our generalization of our model and can highly expect a very good accuracy 
+This repository will keep getting updated with the more innovative solutions which unfortunately couldn't be implemented due to the given timeframe and it shall include experimenting with other models such as DistilBERT & RoBERTa etc.
+We can actually create better models using the attention mechanism, giving more weightage to other features rather instead of only focusing on the label and the context. 
+Also, we can add a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
+* Attention modelling requires features to be present which can be given more importance too for example, we can affirm by training which author has more chances of producing a real article.
+* Clickbait can also be a classification criterion with the inclusion of True and Fake.
+* Using a more complex network of layers we would be able to increase the generalization of our model and can expect a very good accuracy. 
 
 
 
