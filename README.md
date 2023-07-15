@@ -78,6 +78,7 @@ We also tried training on other transformer-based models such as `DistilBERT` & 
 
 # Future Aspects
 Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
+
 😁Clickbait can also be a classification criterion with the inclusion of True and Fake
 
 
