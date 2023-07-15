@@ -26,3 +26,10 @@ feature and that is AI-generated fake news as nowadays many sources do use AI-ge
 
 We had been given the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
 
+## Exploratory Data Analysis
+* The most important step in the ML development cycle is the data preprocessing or the EDA part as it prepares our dataset in such a way that the machine could take in the most important features for classification. We had begun building by using the most Basic ML algorithms such as Logistic Regression, Support Vector Classifiers, XGBoost, Passive Aggressive Classifiers, and Random Forests. We applied preprocessing techniques like Regex and lowering cases to remove unnecessary symbols and link present our data.
+   * 	In the beginning, when we ran our models, we noticed that we had very high accuracies nearing 99%. This made us realize that a lot of our data was not pre-processed 
+        fully since our model was obtaining near 100% accuracy while only being trained on the data. Then we went back to the EDA, cleaning our data and noticed some features 
+        were very distinguishable between the different classes (avg. words per sentence, article lengths, news content). We normalized these features and were able to 
+        successfully remove those factors.
+
