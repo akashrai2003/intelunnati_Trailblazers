@@ -1,4 +1,3 @@
-![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/b74ed80a-cec8-44cb-bad2-93c47b0e2c72)# intelunnati_Trailblazers
 
 # Introduction
 The lives of individuals have been impacted by significant technological flaws in recent years as a result of information sharing.
