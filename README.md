@@ -20,35 +20,44 @@ to clarify fake news article using sci-kit libraries from python. We have also u
 Instead of only human-generated fake news classification we have also added another parameter in our Labels
 feature and that is AI-generated fake news as nowadays many sources do use AI-generated text for creating Fake News.
 
+# **Work Flow**
+![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c0900d97-6b4d-471b-a46b-053ccd081159)
+
+1. First of all we bild a simple ML model using `Random Forest` and we got an unreasonably High Accuracies.
+2. Then we tried to add `Fake AI parameter` which comes under unsupervised learning and here we got a accuracy but not a good performance on real world news.
+3. After this we tried `Deep Learning(LSTM)` under which a variety of EDA is done but still some issue was there while checking on real world news sets.
+4. So we tried to switch to a `Pre-Trained BERT model` which showed a very good semantic understanding with good performance on real world news sets.
+5. Now we tried `BERT optimized(Attention)` and we were trying to implement newer layers for better performance.
 # Dataset
 ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c030c6fe-9645-4c7d-84af-fed91aa4692b)
 
 
-We had been given the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
+We were provided with the ISOT Dataset as our base dataset and no restrictions were placed on adding more on top of it, so we tried to add more datasets due to the reason that our news dataset covers only a limited number of domains such as Politics and World-News focused on US & Middle-East governments. This couldn’t be effective while checking out for news from different domains, so we combined it with other resources, but it took different pre-processing techniques for each of them respectively before concatenating them and would be attempted later on while pursuing to perfectly complete our project as a whole and being deployed.
 
 # In-Depth Exploratory Data Analysis
 
 * About Dataset
-  Our dataset consists of only a few domains of news and thus is not guaranteed of giving the best performance for news from different domains. And the distribution of news 
+  The distribution of news 
   across different domains is as follows:
-  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/cd8b6989-a228-4020-b313-0b4dbdf3bfef) ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/fb1d2a2c-8349-482c-a0a3-601e820e1a62)
+  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/cd8b6989-a228-4020-b313-0b4dbdf3bfef)
+  <br></br>
+  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/fb1d2a2c-8349-482c-a0a3-601e820e1a62)
 
- * As we can see here that only Fake news has 6 different domains while True file has news divided only into 2 domains.
+ * As we can see here that only Fake news has been spread throughout 6 different domains while the True file has news sub-divided only into 2 domains.
   The WordCloud is shown below and it describes the most repeated words in both files:
 
   * **True Data**
-
-
+    
     ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/7e7bd945-e09b-41ff-9cb6-4d57a1aff9ff)
 
 
   * **False Data**
-
+    
      ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/eadb78b1-e158-4177-8280-e1e337331eff)
 
 
     * Split Of Data between Real and Fake News Files
-
+      
       ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/b2ab2b50-260c-49a8-8909-2adbe10643a1)
 
 
@@ -68,14 +77,6 @@ We had been given the ISOT Dataset as our base dataset and no restrictions were 
 
 
 
-# **Work Flow**
-![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/c0900d97-6b4d-471b-a46b-053ccd081159)
-
-1. First of all we bild a simple ML model using `Random Forest` and we got an unreasonably High Accuracies.
-2. Then we tried to add `Fake AI parameter` which comes under unsupervised learning and here we got a accuracy but not a good performance on real world news.
-3. After this we tried `Deep Learning(LSTM)` under which a variety of EDA is done but still some issue was there while checking on real world news sets.
-4. So we tried to switch to a `Pre-Trained BERT model` which showed a very good semantic understanding with good performance on real world news sets.
-5. Now we tried `BERT optimized(Attention)` and we were trying to implement newer layers for better performance.
 
 ## Exploratory Data Analysis
 The most important step in the ML development cycle is the data preprocessing or the EDA part as it prepares our dataset in such a way that the machine could take in the most important features for classification. We had begun building by using the most Basic ML algorithms such as Logistic Regression, Support Vector Classifiers, XGBoost, Passive Aggressive Classifiers, and Random Forests. We applied preprocessing techniques like Regex and lowering cases to remove unnecessary symbols and link present our data.
@@ -85,7 +86,7 @@ The most important step in the ML development cycle is the data preprocessing or
     were very distinguishable between the different classes (avg. words per sentence, article lengths, news content). We normalized these features and were able to 
     successfully remove those factors.
 
-Even after getting reasonably good accuracies, the model was not able to predict the real-world recent scenarios as fake or true, so we figured out that either our model was not strong enough to learn semantics or we were required to train or more data, thus we decide to move onto Deep Learning models as the Neural Networks lay a very strong learning foundation which learns a lot of features and is proven more powerful than basic ML models. The link for the complete EDA is below.
+Even after getting reasonably good accuracies, the model was not able to predict the real-world recent scenarios as fake or true, so we figured out that either our model was not strong enough to learn semantics or we were required to train or more data, thus we decide to move onto Deep Learning models as the Neural Networks lay a very strong learning foundation which learns a lot of features and is proven more powerful than basic ML models. The link for the complete EDA is  <a href="https://github.com/akashrai2003/intelunnati_Trailblazers/blob/main/Docs/Extensive%20EDA%20with%20Visualizations.docx"> here</a>
 
 ## EDA Deep Learning
 There were multiple techniques we applied here for creating word Embeddings like &#8594;
@@ -94,7 +95,7 @@ There were multiple techniques we applied here for creating word Embeddings like
 * One Hot Representation & Tokenizers: Used in NLP to encode categorical factors as binary vectors, such as words or part-of-speech identifiers.
 
 ***The best results were obtained by using GloVe embeddings which were about `98.11%` on the test set and validation accuracy of about `98.06%` using nearly the same model for 
-  all  the different techniques.***
+  al  the different techniques.***
 
 # EDA on Pre-Trained Model BERT (SOTA)
 Even though the accuracy did seem very good but there was not enough semantics according to us for the model to learn the way of human interpretations, so we decided to move for one of the state of the art models in Natural Language which is BERT that is trained on Wikipedia’s dataset but didn’t use the large model having 340M  parameters due to the increase in computation times.
@@ -108,7 +109,7 @@ After rigorous use of Machine Learning and Deep Learning models, the model we se
      ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/a9f1a8cc-b44c-4143-9a02-f926f6466ca6)
 
       Other metrics that were chosen are the ROC-AUC curve and Confusion Matrix elements for evaluating our ML models and for Deep Learning models.
-      All the encoding methods used in our project were introduced briefly inside the EDA section and a more in-depth version of the file could be seen on the following link:
+      All the encoding methods used in our project were introduced briefly inside the EDA section and a more in-depth version of the file could be seen <a href="https://github.com/akashrai2003/intelunnati_Trailblazers/blob/main/Docs/Extensive%20EDA%20with%20Visualizations.docx"> here</a>
 
 
 
@@ -158,7 +159,7 @@ The best performance was obtained by training our LSTM model with the layers spe
 
    * Even though we had a very good accuracy on our deep learning models the only problem was that of generalization and to solve it we needed too much data in order to make 
      our machine learn human semantics of Natural Language and thus we came to the point of choosing transformer-based models and hence experimented on BERT, RoBERTa and 
-     DistilBERT. And were successful only in verifying results from our model built upon the BERT Architecture due to the assigned timeframe. Still other results have also 
+     DistilBERT. And were successful only in verifying results from our model built upon the BERT Architecture due to the assigned timeframe. Stil,l other results have also 
      been displayed below:
 
 # BERT
@@ -191,8 +192,9 @@ Our training accuracy was about 90% and the confusion matrix is represented here
 
 # Future Aspects
 Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
-
-😁Clickbait can also be a classification criterion with the inclusion of True and Fake
+* Attention modelling requires features to be present which can be given more importance too, for example we can affirm by training which author has more chances of producing a real article
+* Clickbait can also be a classification criterion with the inclusion of True and Fake
+* Using a more complex network of layers we would be able to increase our generalization of our model and can highly expect a very good accuracy 
 
 
 
