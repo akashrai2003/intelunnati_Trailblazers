@@ -37,10 +37,15 @@ We had been given the ISOT Dataset as our base dataset and no restrictions were 
  * As we can see here that only Fake news has 6 different domains while True file has news divided only into 2 domains.
   The WordCloud is shown below and it describes the most repeated words in both files:
 
+  * **True Data**
 
-   ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/7e7bd945-e09b-41ff-9cb6-4d57a1aff9ff)
 
-  ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/eadb78b1-e158-4177-8280-e1e337331eff)
+    ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/7e7bd945-e09b-41ff-9cb6-4d57a1aff9ff)
+
+
+  * **False Data**
+
+     ![image](https://github.com/akashrai2003/intelunnati_Trailblazers/assets/134039081/eadb78b1-e158-4177-8280-e1e337331eff)
 
 
 
