@@ -74,7 +74,10 @@ After rigorous use of Machine Learning and Deep Learning models, the model we se
 For our ML-based work, we evaluate our models on the accuracy score and also other measures included in the Confusion Matrix. The average accuracy we’d gained on binary classification was found to be `92.17%` and `AUC score of 0.8`
 The model evaluation is done using our metrics such as accuracy and loss. We received the best accuracy by using Glove representations as `97.86%` on **training data** and `97.81%` on **testing data**. Also the ROC-AUC scores were 
 By using **SOTA models** such as `BERT` got the best accuracy to be `89%` on BERT but it worked too well while using current news sources as compared to our DL models. Using Tf-idf embeddings with the BERT Architecture got us better accuracy of `93.59%` only on 1 epoch, thus have a very high chance of going even higher if trained on 5-10 epochs.
-We also tried training on other transformer-based models such as DistilBERT & RoBERTa but were not able to wrap it up completely.
+We also tried training on other transformer-based models such as `DistilBERT` & `RoBERTa` but were not able to wrap it up completely.
 
+# Future Aspects
+Instead of going for a different dataset as this dataset doesn't have much info about the authenticity of the sources and we can actually create better models using the attention mechanism and give more weightage to other features rather than only focusing on the label and the context. Also, a method which would be able to support our decisions by displaying links related to the context done with the help of APIs & web scraping.
+😁Clickbait can also be a classification criterion with the inclusion of True and Fake
 
 
